@@ -55,7 +55,7 @@ img{display:block;max-width:100%}
 a{color:var(--teal);text-decoration:none}
 button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
 input,textarea,select{font:inherit;color:inherit}
-h1,h2,h3{font-family:var(--serif);color:var(--cacao-dark);line-height:1.15;margin:0;font-weight:700}
+h1,h2,h3{font-family:var(--serif);color:var(--cacao-dark);line-height:1.15;margin:0;font-weight:700;font-variant-numeric:lining-nums;text-wrap:balance}
 p{margin:0}
 :focus-visible{outline:3px solid var(--turquesa);outline-offset:3px;border-radius:6px}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
@@ -321,7 +321,8 @@ textarea.input{resize:vertical;min-height:130px}
 .totals{display:grid;gap:10px;padding:18px 0}
 .totals div{display:flex;justify-content:space-between;color:var(--texto-suave)}
 .totals .grand{border-top:2px solid var(--linea);padding-top:14px;margin-top:4px;color:var(--cacao-dark);font-weight:800;font-size:20px}
-.totals .grand span:last-child{font-family:var(--serif)}
+.totals .grand span:last-child{font-family:var(--sans);font-size:22px}
+.price,.totals,.ci-line,.ci-unit,.option-price,.stepper output,.badge,.count-pill{font-variant-numeric:lining-nums tabular-nums}
 .note{font-size:13px;color:var(--texto-suave);text-align:center;margin-top:12px;display:flex;gap:6px;align-items:center;justify-content:center}
 .note .icon{width:16px;height:16px}
 .back-link{display:inline-flex;align-items:center;gap:6px;font-weight:800;margin-top:32px}
